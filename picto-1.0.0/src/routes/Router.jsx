@@ -4,9 +4,7 @@ import Loading from "../components/common/loading/Loading";
 const Home = lazy(() => import("../pages/Home"));
 const Main = lazy(() => import("../layouts/Main"));
 
-const repoName = import.meta.env.VITE_REPO_NAME || "";
-const isNetlify = import.meta.env.NETLIFY === "true";
-const basename = isNetlify ? "/" : `/${repoName}`;
+const basename = import.meta.env.BASE_URL;
 
 export const router = createBrowserRouter(
   [
