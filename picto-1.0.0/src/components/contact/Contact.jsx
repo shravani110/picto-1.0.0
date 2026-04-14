@@ -1,10 +1,10 @@
 import {
+  faEnvelope,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import Address from "./Address";
 import Form from "./Form";
-import SocialMedia from "../common/socialMedia/SocialMedia";
 import { profile } from "../../data/portfolioData";
 
 const addressData = [
@@ -12,6 +12,11 @@ const addressData = [
     icon: faLocationDot,
     title: "Location",
     description: profile.location,
+  },
+  {
+    icon: faEnvelope,
+    title: "Email",
+    description: profile.email,
   },
   {
     icon: faPhone,
@@ -42,9 +47,6 @@ const Contact = () => {
               {addressData.map((item, index) => (
                 <Address item={item} key={index} />
               ))}
-            </div>
-            <div className="w-full max-lg:text-center max-md:mb-2">
-              <SocialMedia />
             </div>
           </div>
           <div className="w-full py-3">
