@@ -11,7 +11,7 @@ export const profile = {
     "I am especially interested in Android and cross-platform app development, where thoughtful UI design and strong functionality come together to create useful digital products.",
   ],
   stats: [
-    { id: 1, title: "B.Tech Score", description: "76.8%" },
+    { id: 1, title: "B.Tech Score", description: "76.7%" },
     { id: 2, title: "Projects Built", description: "5+" },
   ],
   email: "shravanidasari110@gmail.com",
