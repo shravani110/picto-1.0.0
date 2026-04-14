@@ -1,5 +1,4 @@
 import {
-  faEnvelope,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -13,11 +12,6 @@ const addressData = [
     icon: faLocationDot,
     title: "Location",
     description: profile.location,
-  },
-  {
-    icon: faEnvelope,
-    title: "Email",
-    description: profile.email,
   },
   {
     icon: faPhone,
