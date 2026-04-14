@@ -7,6 +7,7 @@ import skillIcon from "../../assets/images/skill.png";
 
 const Blog = () => {
   const icons = [graduationIcon, certificationIcon, skillIcon];
+  const resumeUrl = `${import.meta.env.BASE_URL}Shravani-Resume.pdf`;
 
   return (
     <div className="content py-25 px-2 relative" id="achievements">
@@ -16,7 +17,7 @@ const Blog = () => {
           B.Tech CSE student with a strong foundation in UI/UX design, front-end development, and cross-platform mobile apps. Experienced in building AI-integrated tools, comprehensive management systems, dynamic web dashboards, and engaging virtual environments.
         </p>
         <a
-          href="/picto/Shravani-Resume.pdf"
+          href={resumeUrl}
           download
           className="btn btn-primary text-white inline-flex items-center gap-2"
         >
