@@ -118,7 +118,7 @@ export const skills = [
     id: 1,
     title: "UI/UX Design",
     description:
-      "UI/UX Design, Figma, Google Stitch, Certified UI/UX Designer.",
+      "Figma, Google Stitch, Certified UI/UX Designer.",
   },
   {
     id: 2,
