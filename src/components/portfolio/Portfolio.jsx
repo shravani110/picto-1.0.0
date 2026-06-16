@@ -4,14 +4,19 @@ import weatherImg from "../../assets/images/weather application dashboard.png";
 import taskManagerImg from "../../assets/images/Intelligent Task Manger.png";
 import operationImg from "../../assets/images/operational finaldawn.png";
 import cyberSpaceImg from "../../assets/images/project cyberspace.png";
-import portfolioImg from "../../assets/images/portfolio-images/card-6.png";
 import { projects } from "../../data/portfolioData";
 
-const projectImages = [cyberSpaceImg, weatherImg, taskManagerImg, operationImg, restaurantImg, portfolioImg];
+const imageMap = {
+  "Project Cyber Space": cyberSpaceImg,
+  "Intelligent Task Manager": taskManagerImg,
+  "The Operation Final Dawn": operationImg,
+  "Hearth & Home Restaurant Web": restaurantImg,
+  "Weather Application Dashboard": weatherImg,
+};
 
-const projectData = projects.map((project, index) => ({
+const projectData = projects.map((project) => ({
   ...project,
-  image: projectImages[index % projectImages.length],
+  image: imageMap[project.title] || null,
 }));
 
 const Portfolio = () => {
