@@ -2,7 +2,7 @@ export const profile = {
   firstName: "Shravani",
   lastName: "Dasari",
   fullName: "Shravani Dasari",
-  headline: "Aspiring UI/UX Designer and front-end developer. Passionate about bridging the gap between elegant visual aesthetics and seamless functionality, utilizing a strong focus on mobile responsiveness to deliver highly interactive and user-friendly applications.",
+  headline: "Passionate about UI/UX design and front-end development, bridging the gap between elegant visual aesthetics and seamless functionality. Utilizing a strong focus on mobile responsiveness to deliver highly interactive and user-friendly applications.",
   subheadline: "",
   summary:
     "Senior undergraduate in Computer Science and Engineering with hands-on experience in React, React Native, Firebase, Android workflows, and UI/UX design.",
@@ -12,7 +12,7 @@ export const profile = {
   ],
   stats: [
     { id: 1, title: "B.Tech Score", description: "76.7%" },
-    { id: 2, title: "Projects Built", description: "5+" },
+    { id: 2, title: "Projects Built", description: "9+" },
   ],
   email: "shravanidasari110@gmail.com",
   phone: "+91-9573373337",
@@ -111,6 +111,46 @@ export const projects = [
     link: "https://github.com/shravani110/hearthandhome",
     figmaLink: null,
   },
+  {
+    id: 6,
+    category: "Desktop App",
+    title: "Orian Builder",
+    description:
+      "Open-source, local-first AI desktop app for fully offline, private software generation — a desktop-native alternative to Bolt.new, v0, and Lovable.",
+    detailedDescription: "Orian Builder is an open-source, local-first AI development desktop application designed to enable fully offline, private, and cost-free software generation. Operating as a desktop-native alternative to cloud-dependent platforms like Bolt.new, v0, and Lovable, Orian Builder allows developers to build, preview, and refine full-stack web and mobile applications using their own hardware. The application is built on Electron and React 19, utilizing a highly secure Inter-Process Communication (IPC) boundary with Zod schema validation to link a responsive user interface with a privileged Node.js main process.\n\nAt the core of its systems engineering is an embedded local inference engine. The app natively integrates llama.cpp to execute GGUF format models and orchestrates a custom NVIDIA TensorRT compilation pipeline. Through a Python-based sidecar interface communicating via streaming JSON-line events, the app manages model downloading, ONNX export, and local GPU compilation (trtexec) to generate highly optimized serialized engine plans. Additionally, the platform implements an autonomous agentic loop capable of parallel tool execution (including file manipulation and package installation) alongside a self-healing compiler feedback mechanism that catches TypeScript diagnostics and automatically resolves errors on the fly.\n\nCore Implementation Details:\n• Desktop Architecture: Electron + React 19 with a Zod-validated IPC boundary between the UI and privileged Node.js main process.\n• Local Inference Engine: llama.cpp integration for running GGUF models fully on-device — zero cloud dependency or API cost.\n• TensorRT Pipeline: Python sidecar over streaming JSON-line events manages ONNX export and trtexec GPU compilation into optimized serialized engine plans.\n• Agentic Loop: Autonomous parallel tool execution covering file manipulation and package installation.\n• Self-Healing Compiler: TypeScript diagnostic capture with automatic error resolution on the fly.\n• Privacy-First: All inference and generation runs locally — no data leaves the machine.",
+    link: "mailto:shravanidasari110@gmail.com?subject=Orian%20Builder",
+    figmaLink: null,
+  },
+  {
+    id: 7,
+    category: "Mobile App",
+    title: "SubAlert",
+    description:
+      "Subscription tracking app that monitors recurring payments, sends renewal alerts, and helps users stay on top of their monthly expenses.",
+    detailedDescription: "SubAlert is a smart subscription management mobile application that helps users track all their recurring payments in one place. The app proactively sends alerts before renewal dates, giving users full visibility and control over their subscription spending.\n\nCore Implementation Details:\n• Subscription Dashboard: Built a centralized dashboard displaying all active subscriptions with cost, renewal date, billing cycle, and category at a glance.\n• Smart Alerts: Implemented configurable push notifications that remind users 1, 3, and 7 days before any subscription renews.\n• Expense Analytics: Developed visual spending breakdowns by category (streaming, SaaS, utilities) with monthly and annual cost summaries.\n• Calendar View: Created a calendar integration showing upcoming renewals so users can plan their budget month by month.\n• Add & Manage Subscriptions: Designed a clean form-based flow to manually add subscriptions with name, amount, currency, and billing frequency.\n• Trial Tracker: Added dedicated tracking for free trials with countdown alerts to prevent surprise charges after trial periods end.\n• Multi-Currency Support: Implemented currency conversion to display total spending in a preferred base currency.\n• Dark Mode: Designed a full dark mode with smooth theme toggling for comfortable use at any time of day.",
+    link: "mailto:shravanidasari110@gmail.com?subject=SubAlert",
+    figmaLink: null,
+  },
+  {
+    id: 8,
+    category: "Mobile App",
+    title: "BudgetBloom",
+    description:
+      "Personal finance tracker that helps users log income and expenses, set budgets, and visualize spending habits through clean, intuitive dashboards.",
+    detailedDescription: "BudgetBloom is a personal finance management application focused on making budgeting simple, visual, and motivating. The app helps users take control of their money by tracking income and expenses, setting category budgets, and surfacing spending insights through clean charts and summaries.\n\nCore Implementation Details:\n• Transaction Logging: Built an intuitive flow for quickly adding income and expense transactions with category, amount, date, and optional notes.\n• Budget Setup: Implemented per-category monthly budget limits with real-time progress bars showing how much of each budget has been spent.\n• Spending Analytics: Created charts (pie, bar, line) to visualize spending patterns across categories and time periods.\n• Dashboard Overview: Designed a home dashboard showing total balance, monthly income vs. expenses, and top spending categories at a glance.\n• Recurring Transactions: Added support for recurring income and expense entries (salary, rent, subscriptions) with automatic monthly logging.\n• Savings Goals: Implemented goal-setting feature where users can allocate money toward specific targets and track progress over time.\n• Export & Reports: Developed monthly report generation with CSV export for personal record-keeping or tax purposes.\n• Offline-First: Built local data persistence ensuring all transactions are accessible without an internet connection.",
+    link: "https://github.com/shravani110/BudgetBloom",
+    figmaLink: null,
+  },
+  {
+    id: 9,
+    category: "Mobile App",
+    title: "SmartStudy",
+    description:
+      "Flashcard and quiz-based study app with spaced repetition, progress tracking, and custom deck creation for effective exam preparation.",
+    detailedDescription: "SmartStudy is a flashcard and quiz-driven study application designed to make learning more effective through proven techniques like spaced repetition and active recall. Users can create custom decks, take adaptive quizzes, and monitor their mastery progress over time.\n\nCore Implementation Details:\n• Flashcard Decks: Built a deck creation system where users can add cards with questions, answers, images, and code snippets for any subject.\n• Spaced Repetition Algorithm: Implemented SM-2 spaced repetition scheduling to surface cards at optimal review intervals based on recall confidence ratings.\n• Quiz Mode: Developed multiple quiz formats — multiple choice, true/false, and type-the-answer — generated from user's own flashcard decks.\n• Progress Tracking: Created per-deck mastery meters and session history charts showing accuracy trends and cards due for review.\n• Deck Import/Export: Supported importing decks from CSV and Anki-compatible formats so users can bring in existing study material.\n• Study Streaks: Implemented daily study streak tracking with motivational milestones to build consistent study habits.\n• Search & Tags: Added tagging and full-text search across all decks and cards for quick navigation across large study libraries.\n• Offline Support: Built full offline functionality so users can study anywhere without needing an internet connection.",
+    link: "https://github.com/shravani110/SmartStudy",
+    figmaLink: null,
+  },
 ];
 
 export const skills = [
@@ -130,7 +170,7 @@ export const skills = [
     id: 3,
     title: "Front-End Development",
     description:
-      "Expert in React, React Native, HTML, CSS, and responsive design patterns for all devices.",
+      "Proficient in React, React Native, HTML, CSS, and responsive design patterns for all devices.",
   },
 ];
 
@@ -139,14 +179,14 @@ export const achievements = [
     id: 1,
     date: "EDUCATION",
     comments: "Graduation Cap",
-    title: "B.Tech Computer Science & Engineering (2022–2026, Sree Chaitanya Institute of Technological Sciences, 76.8%). Telangana Board XII (95%), X (100%).",
+    title: "B.Tech Computer Science & Engineering (2022–2026, Sree Chaitanya Institute of Technological Sciences, 76.7%). Telangana Board XII (95%), X (100%).",
     link: profile.linkedIn,
   },
   {
     id: 2,
     date: "CERTIFICATIONS & HACKATHONS",
     comments: "Trophy",
-    title: "Certifications: Python & Data Analytics Essentials (Cisco), UI/UX Skill Test (Beep), Naukri Campus Young Turks Merit. Hackathons: Amazon AWS Game Dev, Amazon ML Hackathon, Flipkart Grid 6.0.",
+    title: "Certifications: Certified UI/UX Designer from Beep, Naukri Campus Young Turks 2025, Data Analytics and Python Essentials (Cisco Networking Academy). Hackathons: Amazon AWS Game Dev Challenge, Amazon ML Hackathon, Flipkart Grid 6.0, Tata Crucible Campus Quiz.",
     link: profile.linkedIn,
   },
   {

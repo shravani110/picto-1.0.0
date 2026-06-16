@@ -36,11 +36,7 @@ const Contact = () => {
           <div>
             <div>
               <p className="text-[35px] max-lg:hidden font-semibold text-nowrap text-[#132238]">
-                Looking for a UI/UX designer or front-end developer for your next idea?
-              </p>
-              <p className="text-[12px] xs:text-[14px] sm:text-lg md:text-lg max-lg:text-center pt-4 font-normal text-soft-dark">
-                I am available for internships, collaborations, and UI/UX or
-                front-end project opportunities.
+                Let's build something amazing together.
               </p>
             </div>
             <div className="my-4 sm:max-lg:flex justify-between items-center">
@@ -51,7 +47,7 @@ const Contact = () => {
           </div>
           <div className="w-full py-3">
             <p className="text-xl mb-2 xs:text-2xl sm:text-2xl md:text-[38px] font-semibold text-[#132238] lg:hidden text-center">
-              Looking for a UI/UX designer or front-end developer for your next idea?
+              Let's build something amazing together.
             </p>
             <Form />
           </div>
