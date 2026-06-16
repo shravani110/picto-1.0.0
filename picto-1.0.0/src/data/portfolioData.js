@@ -63,22 +63,22 @@ export const processSteps = [
 export const projects = [
   {
     id: 1,
+    category: "Desktop App",
+    title: "Orian Builder",
+    description:
+      "Open-source, local-first AI desktop app for fully offline, private software generation — a desktop-native alternative to Bolt.new, v0, and Lovable.",
+    detailedDescription: "Orian Builder is an open-source, local-first AI development desktop application designed to enable fully offline, private, and cost-free software generation. Operating as a desktop-native alternative to cloud-dependent platforms like Bolt.new, v0, and Lovable, Orian Builder allows developers to build, preview, and refine full-stack web and mobile applications using their own hardware. The application is built on Electron and React 19, utilizing a highly secure Inter-Process Communication (IPC) boundary with Zod schema validation to link a responsive user interface with a privileged Node.js main process.\n\nAt the core of its systems engineering is an embedded local inference engine. The app natively integrates llama.cpp to execute GGUF format models and orchestrates a custom NVIDIA TensorRT compilation pipeline. Through a Python-based sidecar interface communicating via streaming JSON-line events, the app manages model downloading, ONNX export, and local GPU compilation (trtexec) to generate highly optimized serialized engine plans. Additionally, the platform implements an autonomous agentic loop capable of parallel tool execution (including file manipulation and package installation) alongside a self-healing compiler feedback mechanism that catches TypeScript diagnostics and automatically resolves errors on the fly.\n\nCore Implementation Details:\n• Desktop Architecture: Electron + React 19 with a Zod-validated IPC boundary between the UI and privileged Node.js main process.\n• Local Inference Engine: llama.cpp integration for running GGUF models fully on-device — zero cloud dependency or API cost.\n• TensorRT Pipeline: Python sidecar over streaming JSON-line events manages ONNX export and trtexec GPU compilation into optimized serialized engine plans.\n• Agentic Loop: Autonomous parallel tool execution covering file manipulation and package installation.\n• Self-Healing Compiler: TypeScript diagnostic capture with automatic error resolution on the fly.\n• Privacy-First: All inference and generation runs locally — no data leaves the machine.",
+    link: "mailto:shravanidasari110@gmail.com?subject=Orian%20Builder",
+    figmaLink: null,
+  },
+  {
+    id: 2,
     category: "Immersive Platform",
     title: "Project Cyber Space",
     description:
       "Metaverse-based corporate training platform with interactive workshops, collaborative modules, and real-time discussion spaces.",
     detailedDescription: "Project Cyber Space is a cutting-edge metaverse-based corporate training platform designed to revolutionize how organizations conduct employee development and team collaboration. Built with immersive VR/AR technologies, the platform creates virtual environments where employees can engage in interactive workshops, collaborate on complex projects, and participate in real-time discussions from anywhere in the world.\n\nCore Implementation Details:\n• Virtual Environment Design: Created immersive 3D spaces using Unreal Engine for realistic corporate settings with breakout rooms, auditoriums, and collaboration zones.\n• Real-time Communication: Integrated WebSocket protocols for instant audio/video conferencing with low-latency interactions across global teams.\n• Interactive Workshops: Developed gamified learning modules with interactive elements that track employee engagement and progress in real-time.\n• Collaborative Tools: Implemented shared whiteboards, document collaboration, and project management features within the virtual space.\n• User Avatar System: Built customizable avatars with realistic animations for enhanced presence and engagement in virtual meetings.\n• Analytics Dashboard: Created comprehensive tracking systems to monitor training effectiveness, participation rates, and learning outcomes.\n• Accessibility Features: Ensured cross-platform compatibility and accessibility options for users with different technical capabilities.",
     link: "mailto:shravanidasari110@gmail.com?subject=Project%20Cyber%20Space",
-    figmaLink: null,
-  },
-  {
-    id: 2,
-    category: "Web App",
-    title: "Weather Application Dashboard",
-    description:
-      "Responsive weather dashboard that consumes third-party APIs, processes JSON data, and presents real-time weather updates in a clean UI.",
-    detailedDescription: "The Weather Application Dashboard is a sophisticated web-based weather platform that delivers real-time meteorological data with an intuitive and responsive user interface. It seamlessly integrates multiple weather APIs to provide comprehensive weather information including current conditions, forecasts, and severe weather alerts.\n\nCore Implementation Details:\n• API Integration: Connected multiple weather APIs (OpenWeatherMap, Weather API) to fetch real-time data with automatic fallback mechanisms.\n• Data Processing: Built robust JSON parsing and data transformation layers to handle diverse API response formats efficiently.\n• Interactive Maps: Integrated interactive maps with weather layers showing precipitation, temperature zones, and wind patterns.\n• Responsive Design: Implemented fully responsive design using CSS Grid and Flexbox for seamless experience across all device sizes.\n• Real-time Updates: Created auto-refresh functionality with configurable intervals to keep data current without overwhelming API quotas.\n• Location Services: Integrated geolocation APIs for automatic location detection and manual location search with autocomplete.\n• Visual Analytics: Developed charts and graphs to display temperature trends, humidity levels, and precipitation forecasts.\n• Weather Alerts: Implemented push notification system for severe weather warnings and alerts.\n• Offline Support: Added service worker for basic offline functionality showing cached weather data.",
-    link: "https://github.com/shravani110/weatherdashboard11",
     figmaLink: null,
   },
   {
@@ -93,46 +93,16 @@ export const projects = [
   },
   {
     id: 4,
-    category: "Creative Project",
-    title: "The Operation Final Dawn",
+    category: "Mobile App",
+    title: "SmartStudy",
     description:
-      "Story-driven concept project built around survival, exploration, and a high-stakes mission set in a frozen wasteland.",
-    detailedDescription: "The Operation Final Dawn is an ambitious story-driven concept project that immerses players in a high-stakes survival narrative set in a frozen wasteland. The project demonstrates advanced game design principles, atmospheric storytelling, and complex system implementation for a compelling player experience across exploration and survival mechanics.\n\nCore Implementation Details:\n• Narrative Design: Crafted an intricate multi-branching narrative with player choices affecting story outcomes and world state progression.\n• UI/UX Design: Created minimalist yet functional interfaces that maintain horror atmosphere while providing essential survival information without clutter.\n• Large Data Management: Optimized handling of massive world states, persistent environmental changes, and complex item management systems.\n• AI Pathfinding: Implemented advanced enemy AI using A* algorithms and behavior trees for realistic tactical decision-making in pursuit scenarios.\n• Media Management: Orchestrated complex audio system with dynamic music transitions, spatial 3D audio, and high-fidelity sound design.\n• Procedural World-Building: Combined handcrafted narrative locations with procedurally generated elements for vast explorable environments.\n• Performance Optimization: Implemented level streaming and culling systems to maintain performance while delivering expansive frozen landscapes.\n• Save System: Built comprehensive save system tracking player progress, world state changes, inventory modifications, and discovered lore.\n\nThis project showcases extensive proficiency in game engine logic, state management, and 3D environment design. It pushes the boundaries of independent survival horror by focusing on deep simulation mechanics rather than just simple combat, providing a challenging and rewarding experience for players who value immersion and difficulty.",
-    link: "mailto:shravanidasari110@gmail.com?subject=Operation%20Final%20Dawn",
-    figmaLink: "https://www.figma.com/design/dwCOlbBzo1XcRk0YGa59pW/Operation-Final-Dawn?node-id=0-1&p=f&t=awAToBRizgHAMFAZ-0",
+      "Interactive study assistant app that generates simplified notes, flashcards, and quizzes from pasted study material using AI APIs.",
+    detailedDescription: "SmartStudy is a mobile app designed as an interactive study assistant. Users paste study materials into the app, which generates simplified notes, key takeaways, flashcards, and quizzes. It integrates with external AI APIs to analyze content.\n\nCore Implementation Details:\n• AI Content Analysis: Integrates with external AI APIs to process pasted study material and generate simplified notes, key takeaways, flashcards, and quizzes automatically.\n• Navigation: Implements React Navigation with a bottom tab bar (Home, Library, Flashcards, and Quiz screens) and stack routes for a smooth multi-screen experience.\n• Authentication: Supports user authentication via local phone/OTP flow and Google Sign-in.\n• Themes: Features both Light and Dark themes, customizable through a dedicated theme context.\n• Local Persistence: Uses AsyncStorage for local data persistence of study guides, user profiles, and settings.\n• Flashcards: Supports interactive flip animations for active recall learning.\n• Quizzes: Fully interactive with real-time scoring, incorrect-answer reviews, and explanations.\n• Library: A dedicated Library screen lets users save, retrieve, and manage previously generated study guides.",
+    link: "https://github.com/shravani110/SmartStudy",
+    figmaLink: null,
   },
   {
     id: 5,
-    category: "Mobile App",
-    title: "Hearth & Home Restaurant Management App",
-    description:
-      "Restaurant management mobile app with Firebase integration, table handling for up to 30 tables, and live order status tracking.",
-    detailedDescription: "Hearth & Home is a comprehensive restaurant management mobile application designed to streamline operations for dining establishments. The app provides real-time order management, table coordination, and customer service optimization through an intuitive interface and robust backend infrastructure powered by Firebase.\n\nCore Implementation Details:\n• Table Management: Implemented sophisticated system for managing up to 30 tables with real-time status updates (available, occupied, reserved, cleaning).\n• Order Processing: Built complete order-to-delivery workflow with kitchen display system integration and real-time order status updates.\n• Firebase Integration: Utilized Firebase Realtime Database for instant synchronization across all devices and staff members in the restaurant.\n• Payment Processing: Integrated secure payment gateway supporting multiple payment methods with transaction tracking and receipt generation.\n• Staff Management: Created role-based access control for different staff positions (manager, waiter, chef, cashier) with appropriate permissions.\n• Customer Profiles: Built customer database with preferences, order history, and loyalty program tracking for personalized service.\n• Analytics Dashboard: Developed comprehensive reporting system tracking daily sales, popular dishes, peak hours, and staff performance.\n• Notification System: Implemented push notifications for order updates, table readiness alerts, and special requests from customers.\n• Inventory Tracking: Added system for monitoring food inventory levels with low-stock alerts and usage analytics.",
-    link: "https://github.com/shravani110/hearthandhome",
-    figmaLink: null,
-  },
-  {
-    id: 6,
-    category: "Desktop App",
-    title: "Orian Builder",
-    description:
-      "Open-source, local-first AI desktop app for fully offline, private software generation — a desktop-native alternative to Bolt.new, v0, and Lovable.",
-    detailedDescription: "Orian Builder is an open-source, local-first AI development desktop application designed to enable fully offline, private, and cost-free software generation. Operating as a desktop-native alternative to cloud-dependent platforms like Bolt.new, v0, and Lovable, Orian Builder allows developers to build, preview, and refine full-stack web and mobile applications using their own hardware. The application is built on Electron and React 19, utilizing a highly secure Inter-Process Communication (IPC) boundary with Zod schema validation to link a responsive user interface with a privileged Node.js main process.\n\nAt the core of its systems engineering is an embedded local inference engine. The app natively integrates llama.cpp to execute GGUF format models and orchestrates a custom NVIDIA TensorRT compilation pipeline. Through a Python-based sidecar interface communicating via streaming JSON-line events, the app manages model downloading, ONNX export, and local GPU compilation (trtexec) to generate highly optimized serialized engine plans. Additionally, the platform implements an autonomous agentic loop capable of parallel tool execution (including file manipulation and package installation) alongside a self-healing compiler feedback mechanism that catches TypeScript diagnostics and automatically resolves errors on the fly.\n\nCore Implementation Details:\n• Desktop Architecture: Electron + React 19 with a Zod-validated IPC boundary between the UI and privileged Node.js main process.\n• Local Inference Engine: llama.cpp integration for running GGUF models fully on-device — zero cloud dependency or API cost.\n• TensorRT Pipeline: Python sidecar over streaming JSON-line events manages ONNX export and trtexec GPU compilation into optimized serialized engine plans.\n• Agentic Loop: Autonomous parallel tool execution covering file manipulation and package installation.\n• Self-Healing Compiler: TypeScript diagnostic capture with automatic error resolution on the fly.\n• Privacy-First: All inference and generation runs locally — no data leaves the machine.",
-    link: "mailto:shravanidasari110@gmail.com?subject=Orian%20Builder",
-    figmaLink: null,
-  },
-  {
-    id: 7,
-    category: "Mobile App",
-    title: "SubAlert",
-    description:
-      "Subscription tracking app that monitors recurring payments, sends renewal alerts, and helps users stay on top of their monthly expenses.",
-    detailedDescription: "SubAlert is a smart subscription management mobile application that helps users track all their recurring payments in one place. The app proactively sends alerts before renewal dates, giving users full visibility and control over their subscription spending.\n\nCore Implementation Details:\n• Subscription Dashboard: Built a centralized dashboard displaying all active subscriptions with cost, renewal date, billing cycle, and category at a glance.\n• Smart Alerts: Implemented configurable push notifications that remind users 1, 3, and 7 days before any subscription renews.\n• Expense Analytics: Developed visual spending breakdowns by category (streaming, SaaS, utilities) with monthly and annual cost summaries.\n• Calendar View: Created a calendar integration showing upcoming renewals so users can plan their budget month by month.\n• Add & Manage Subscriptions: Designed a clean form-based flow to manually add subscriptions with name, amount, currency, and billing frequency.\n• Trial Tracker: Added dedicated tracking for free trials with countdown alerts to prevent surprise charges after trial periods end.\n• Multi-Currency Support: Implemented currency conversion to display total spending in a preferred base currency.\n• Dark Mode: Designed a full dark mode with smooth theme toggling for comfortable use at any time of day.",
-    link: "mailto:shravanidasari110@gmail.com?subject=SubAlert",
-    figmaLink: null,
-  },
-  {
-    id: 8,
     category: "Mobile App",
     title: "BudgetBloom",
     description:
@@ -142,13 +112,43 @@ export const projects = [
     figmaLink: null,
   },
   {
+    id: 6,
+    category: "Creative Project",
+    title: "The Operation Final Dawn",
+    description:
+      "Story-driven concept project built around survival, exploration, and a high-stakes mission set in a frozen wasteland.",
+    detailedDescription: "The Operation Final Dawn is an ambitious story-driven concept project that immerses players in a high-stakes survival narrative set in a frozen wasteland. The project demonstrates advanced game design principles, atmospheric storytelling, and complex system implementation for a compelling player experience across exploration and survival mechanics.\n\nCore Implementation Details:\n• Narrative Design: Crafted an intricate multi-branching narrative with player choices affecting story outcomes and world state progression.\n• UI/UX Design: Created minimalist yet functional interfaces that maintain horror atmosphere while providing essential survival information without clutter.\n• Large Data Management: Optimized handling of massive world states, persistent environmental changes, and complex item management systems.\n• AI Pathfinding: Implemented advanced enemy AI using A* algorithms and behavior trees for realistic tactical decision-making in pursuit scenarios.\n• Media Management: Orchestrated complex audio system with dynamic music transitions, spatial 3D audio, and high-fidelity sound design.\n• Procedural World-Building: Combined handcrafted narrative locations with procedurally generated elements for vast explorable environments.\n• Performance Optimization: Implemented level streaming and culling systems to maintain performance while delivering expansive frozen landscapes.\n• Save System: Built comprehensive save system tracking player progress, world state changes, inventory modifications, and discovered lore.\n\nThis project showcases extensive proficiency in game engine logic, state management, and 3D environment design. It pushes the boundaries of independent survival horror by focusing on deep simulation mechanics rather than just simple combat, providing a challenging and rewarding experience for players who value immersion and difficulty.",
+    link: "mailto:shravanidasari110@gmail.com?subject=Operation%20Final%20Dawn",
+    figmaLink: "https://www.figma.com/design/dwCOlbBzo1XcRk0YGa59pW/Operation-Final-Dawn?node-id=0-1&p=f&t=awAToBRizgHAMFAZ-0",
+  },
+  {
+    id: 7,
+    category: "Web App",
+    title: "Hearth & Home Restaurant Web",
+    description:
+      "Restaurant management web app with Firebase integration, table handling for up to 30 tables, and live order status tracking.",
+    detailedDescription: "Hearth & Home is a comprehensive restaurant management web application designed to streamline operations for dining establishments. The app provides real-time order management, table coordination, and customer service optimization through an intuitive interface and robust backend infrastructure powered by Firebase.\n\nCore Implementation Details:\n• Table Management: Implemented sophisticated system for managing up to 30 tables with real-time status updates (available, occupied, reserved, cleaning).\n• Order Processing: Built complete order-to-delivery workflow with kitchen display system integration and real-time order status updates.\n• Firebase Integration: Utilized Firebase Realtime Database for instant synchronization across all devices and staff members in the restaurant.\n• Payment Processing: Integrated secure payment gateway supporting multiple payment methods with transaction tracking and receipt generation.\n• Staff Management: Created role-based access control for different staff positions (manager, waiter, chef, cashier) with appropriate permissions.\n• Customer Profiles: Built customer database with preferences, order history, and loyalty program tracking for personalized service.\n• Analytics Dashboard: Developed comprehensive reporting system tracking daily sales, popular dishes, peak hours, and staff performance.\n• Notification System: Implemented push notifications for order updates, table readiness alerts, and special requests from customers.\n• Inventory Tracking: Added system for monitoring food inventory levels with low-stock alerts and usage analytics.",
+    link: "https://github.com/shravani110/hearthandhome",
+    figmaLink: null,
+  },
+  {
+    id: 8,
+    category: "Web App",
+    title: "Weather Application Dashboard",
+    description:
+      "Responsive weather dashboard that consumes third-party APIs, processes JSON data, and presents real-time weather updates in a clean UI.",
+    detailedDescription: "The Weather Application Dashboard is a sophisticated web-based weather platform that delivers real-time meteorological data with an intuitive and responsive user interface. It seamlessly integrates multiple weather APIs to provide comprehensive weather information including current conditions, forecasts, and severe weather alerts.\n\nCore Implementation Details:\n• API Integration: Connected multiple weather APIs (OpenWeatherMap, Weather API) to fetch real-time data with automatic fallback mechanisms.\n• Data Processing: Built robust JSON parsing and data transformation layers to handle diverse API response formats efficiently.\n• Interactive Maps: Integrated interactive maps with weather layers showing precipitation, temperature zones, and wind patterns.\n• Responsive Design: Implemented fully responsive design using CSS Grid and Flexbox for seamless experience across all device sizes.\n• Real-time Updates: Created auto-refresh functionality with configurable intervals to keep data current without overwhelming API quotas.\n• Location Services: Integrated geolocation APIs for automatic location detection and manual location search with autocomplete.\n• Visual Analytics: Developed charts and graphs to display temperature trends, humidity levels, and precipitation forecasts.\n• Weather Alerts: Implemented push notification system for severe weather warnings and alerts.\n• Offline Support: Added service worker for basic offline functionality showing cached weather data.",
+    link: "https://github.com/shravani110/weatherdashboard11",
+    figmaLink: null,
+  },
+  {
     id: 9,
     category: "Mobile App",
-    title: "SmartStudy",
+    title: "SubAlert",
     description:
-      "Flashcard and quiz-based study app with spaced repetition, progress tracking, and custom deck creation for effective exam preparation.",
-    detailedDescription: "SmartStudy is a flashcard and quiz-driven study application designed to make learning more effective through proven techniques like spaced repetition and active recall. Users can create custom decks, take adaptive quizzes, and monitor their mastery progress over time.\n\nCore Implementation Details:\n• Flashcard Decks: Built a deck creation system where users can add cards with questions, answers, images, and code snippets for any subject.\n• Spaced Repetition Algorithm: Implemented SM-2 spaced repetition scheduling to surface cards at optimal review intervals based on recall confidence ratings.\n• Quiz Mode: Developed multiple quiz formats — multiple choice, true/false, and type-the-answer — generated from user's own flashcard decks.\n• Progress Tracking: Created per-deck mastery meters and session history charts showing accuracy trends and cards due for review.\n• Deck Import/Export: Supported importing decks from CSV and Anki-compatible formats so users can bring in existing study material.\n• Study Streaks: Implemented daily study streak tracking with motivational milestones to build consistent study habits.\n• Search & Tags: Added tagging and full-text search across all decks and cards for quick navigation across large study libraries.\n• Offline Support: Built full offline functionality so users can study anywhere without needing an internet connection.",
-    link: "https://github.com/shravani110/SmartStudy",
+      "Subscription tracking app that monitors recurring payments, sends renewal alerts, and helps users stay on top of their monthly expenses.",
+    detailedDescription: "SubAlert is a smart subscription management mobile application that helps users track all their recurring payments in one place. The app proactively sends alerts before renewal dates, giving users full visibility and control over their subscription spending.\n\nCore Implementation Details:\n• Subscription Dashboard: Built a centralized dashboard displaying all active subscriptions with cost, renewal date, billing cycle, and category at a glance.\n• Smart Alerts: Implemented configurable push notifications that remind users 1, 3, and 7 days before any subscription renews.\n• Expense Analytics: Developed visual spending breakdowns by category (streaming, SaaS, utilities) with monthly and annual cost summaries.\n• Calendar View: Created a calendar integration showing upcoming renewals so users can plan their budget month by month.\n• Add & Manage Subscriptions: Designed a clean form-based flow to manually add subscriptions with name, amount, currency, and billing frequency.\n• Trial Tracker: Added dedicated tracking for free trials with countdown alerts to prevent surprise charges after trial periods end.\n• Multi-Currency Support: Implemented currency conversion to display total spending in a preferred base currency.\n• Dark Mode: Designed a full dark mode with smooth theme toggling for comfortable use at any time of day.",
+    link: "mailto:shravanidasari110@gmail.com?subject=SubAlert",
     figmaLink: null,
   },
 ];
