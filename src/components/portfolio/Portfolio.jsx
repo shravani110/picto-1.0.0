@@ -4,14 +4,22 @@ import weatherImg from "../../assets/images/weather application dashboard.png";
 import taskManagerImg from "../../assets/images/Intelligent Task Manger.png";
 import operationImg from "../../assets/images/operational finaldawn.png";
 import cyberSpaceImg from "../../assets/images/project cyberspace.png";
+import orianBuilderImg from "../../assets/images/OrainBuilder.png";
+import smartStudyImg from "../../assets/images/SmartStudy.png";
+import budgetBloomImg from "../../assets/images/BudgetBloom.png";
+import subAlertImg from "../../assets/images/SubAlert.png";
 import { projects } from "../../data/portfolioData";
 
 const imageMap = {
+  "Orian Builder": orianBuilderImg,
   "Project Cyber Space": cyberSpaceImg,
   "Intelligent Task Manager": taskManagerImg,
+  "SmartStudy": smartStudyImg,
+  "BudgetBloom": budgetBloomImg,
   "The Operation Final Dawn": operationImg,
   "Hearth & Home Restaurant Web": restaurantImg,
   "Weather Application Dashboard": weatherImg,
+  "SubAlert": subAlertImg,
 };
 
 const projectData = projects.map((project) => ({
